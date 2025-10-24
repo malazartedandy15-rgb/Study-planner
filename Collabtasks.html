@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="planner-container">
+        <header>
+            <h1>Smart Study Planner</h1>
+        </header>
+        <main class="main-layout">
+            <div class="calendar-section">
+                <div class="calendar-header">
+                    <button id="prev-month-btn">&lt;</button>
+                    <h2 id="current-month-year"></h2>
+                    <button id="next-month-btn">&gt;</button>
+                </div>
+                <div class="calendar">
+                    <div class="weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div class="days" id="calendar-days"></div>
+                </div>
+            </div>
+            <div class="task-section">
+                <h3>Add New Task</h3>
+                <form id="add-task-form">
+                    <input type="text" id="task-name" placeholder="Task Name (e.g., Final Exam)" required>
+                    <input type="date" id="task-date" required>
+                    <button type="submit">Add Task</button>
+                </form>
+                <h3>Upcoming Tasks</h3>
+                <ul class="task-list" id="upcoming-tasks-list"></ul>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
